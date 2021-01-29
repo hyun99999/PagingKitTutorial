@@ -24,9 +24,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //nib 파일로 menucell 을 만듦.
+//        menuViewController.register(nib: UINib(nibName: "MenuCell", bundle: nil), forCellWithReuseIdentifier: "MenuCell")
         
-        menuViewController.register(nib: UINib(nibName: "MenuCell", bundle: nil), forCellWithReuseIdentifier: "MenuCell")
-        menuViewController.registerFocusView(nib: UINib(nibName: "FocusView", bundle: nil))
+        //nib 파일말고도 코드로 만들 수 있다. 이미 만들어둔 titleLabelMenuViewCell 을 사용.
+        menuViewController.register(type: TitleLabelMenuViewCell.self, forCellWithReuseIdentifier:"titleLabelMenuCell")
+        
+//        menuViewController.registerFocusView(nib: UINib(nibName: "FocusView", bundle: nil))
+        menuViewController.registerFocusView(view: UnderlineFocusView())
+        
+        menuViewController.cellAlignment = .center
         
         menuViewController.reloadData()
         contentViewController.reloadData()
@@ -55,7 +62,9 @@ extension ViewController: PagingMenuViewControllerDataSource {
     }
     
     func menuViewController(viewController: PagingMenuViewController, cellForItemAt index: Int) -> PagingMenuViewCell {
-        let cell = viewController.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: index) as! MenuCell
+//        let cell = viewController.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: index) as! MenuCell
+        let cell = viewController.dequeueReusableCell(withReuseIdentifier: "titleLabelMenuCell", for: index) as! TitleLabelMenuViewCell
+        
         cell.titleLabel.text = dataSource[index].menuTitle
         return cell
     }
