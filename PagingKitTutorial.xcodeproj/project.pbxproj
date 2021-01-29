@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3C8907DF267F160188161206 /* Pods_PagingKitTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0AF820BAA73617BE03E2E1 /* Pods_PagingKitTutorial.framework */; };
+		F80ED83825C4012900AD3156 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80ED83725C4012900AD3156 /* MenuCell.swift */; };
+		F80ED83B25C4016E00AD3156 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80ED83A25C4016E00AD3156 /* MenuCell.xib */; };
 		F81FEA3C25C3E68D00633479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FEA3B25C3E68D00633479 /* AppDelegate.swift */; };
 		F81FEA3E25C3E68D00633479 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FEA3D25C3E68D00633479 /* SceneDelegate.swift */; };
 		F81FEA4025C3E68D00633479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FEA3F25C3E68D00633479 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 		0D0AF820BAA73617BE03E2E1 /* Pods_PagingKitTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PagingKitTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C86B8D7C2E4FEA023311BFD /* Pods-PagingKitTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PagingKitTutorial.debug.xcconfig"; path = "Target Support Files/Pods-PagingKitTutorial/Pods-PagingKitTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		5A283900387E3112DA910126 /* Pods-PagingKitTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PagingKitTutorial.release.xcconfig"; path = "Target Support Files/Pods-PagingKitTutorial/Pods-PagingKitTutorial.release.xcconfig"; sourceTree = "<group>"; };
+		F80ED83725C4012900AD3156 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		F80ED83A25C4016E00AD3156 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		F81FEA3825C3E68D00633479 /* PagingKitTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagingKitTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F81FEA3B25C3E68D00633479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F81FEA3D25C3E68D00633479 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +52,6 @@
 				3C86B8D7C2E4FEA023311BFD /* Pods-PagingKitTutorial.debug.xcconfig */,
 				5A283900387E3112DA910126 /* Pods-PagingKitTutorial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,6 +79,8 @@
 				F81FEA3B25C3E68D00633479 /* AppDelegate.swift */,
 				F81FEA3D25C3E68D00633479 /* SceneDelegate.swift */,
 				F81FEA3F25C3E68D00633479 /* ViewController.swift */,
+				F80ED83725C4012900AD3156 /* MenuCell.swift */,
+				F80ED83A25C4016E00AD3156 /* MenuCell.xib */,
 				F81FEA4125C3E68D00633479 /* Main.storyboard */,
 				F81FEA4425C3E68E00633479 /* Assets.xcassets */,
 				F81FEA4625C3E68E00633479 /* LaunchScreen.storyboard */,
@@ -153,6 +158,7 @@
 			files = (
 				F81FEA4825C3E68E00633479 /* LaunchScreen.storyboard in Resources */,
 				F81FEA4525C3E68E00633479 /* Assets.xcassets in Resources */,
+				F80ED83B25C4016E00AD3156 /* MenuCell.xib in Resources */,
 				F81FEA4325C3E68D00633479 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +214,7 @@
 			files = (
 				F81FEA4025C3E68D00633479 /* ViewController.swift in Sources */,
 				F81FEA3C25C3E68D00633479 /* AppDelegate.swift in Sources */,
+				F80ED83825C4012900AD3156 /* MenuCell.swift in Sources */,
 				F81FEA3E25C3E68D00633479 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
