@@ -23,7 +23,6 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="h8o-7N-Jai"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="h8o-7N-Jai" firstAttribute="trailing" secondItem="0P7-FE-EW7" secondAttribute="trailing" id="7Ir-Zg-NUJ"/>
                 <constraint firstItem="0P7-FE-EW7" firstAttribute="leading" secondItem="h8o-7N-Jai" secondAttribute="leading" id="GTR-69-PlY"/>
@@ -34,9 +33,6 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
