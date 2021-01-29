@@ -15,17 +15,25 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0P7-FE-EW7">
-                    <rect key="frame" x="0.0" y="121" width="510" height="20"/>
+                    <rect key="frame" x="20" y="138" width="470" height="3"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="20" id="BAe-oU-R6e"/>
+                        <constraint firstAttribute="height" constant="3" id="BAe-oU-R6e"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1J-wA-MmC">
+                    <rect key="frame" x="20" y="123" width="14" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="h8o-7N-Jai"/>
             <constraints>
-                <constraint firstItem="h8o-7N-Jai" firstAttribute="trailing" secondItem="0P7-FE-EW7" secondAttribute="trailing" id="7Ir-Zg-NUJ"/>
-                <constraint firstItem="0P7-FE-EW7" firstAttribute="leading" secondItem="h8o-7N-Jai" secondAttribute="leading" id="GTR-69-PlY"/>
+                <constraint firstItem="h8o-7N-Jai" firstAttribute="trailing" secondItem="0P7-FE-EW7" secondAttribute="trailing" constant="20" id="7Ir-Zg-NUJ"/>
+                <constraint firstItem="0P7-FE-EW7" firstAttribute="top" secondItem="C1J-wA-MmC" secondAttribute="bottom" constant="3" id="DEM-u7-oCB"/>
+                <constraint firstItem="0P7-FE-EW7" firstAttribute="leading" secondItem="h8o-7N-Jai" secondAttribute="leading" constant="20" id="GTR-69-PlY"/>
+                <constraint firstItem="C1J-wA-MmC" firstAttribute="leading" secondItem="0P7-FE-EW7" secondAttribute="leading" id="S1S-bK-hfK"/>
                 <constraint firstItem="h8o-7N-Jai" firstAttribute="bottom" secondItem="0P7-FE-EW7" secondAttribute="bottom" id="hXY-Wl-580"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
